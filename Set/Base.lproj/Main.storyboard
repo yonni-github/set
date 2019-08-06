@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="redraw" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-K5-gIq">
+                                <rect key="frame" x="83.666666666666686" y="698" width="208" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UsR-09-A2Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="R4P-yP-dMc">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Set Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ite-rC-eZt">
+                                                        <rect key="frame" x="-83.666666666666671" y="0.0" width="0.0" height="36"/>
+                                                        <color key="backgroundColor" red="0.66364383171994512" green="1" blue="0.79480179134068674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <color key="highlightedColor" red="0.66364383171994512" green="1" blue="0.79480179134068674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9T-OV-h4L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                                        <color key="backgroundColor" red="0.72171943470844768" green="0.72344864573652057" blue="0.73577321780160299" alpha="0.69635783450704225" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <state key="normal" title="Deal Cards"/>
+                                                        <connections>
+                                                            <action selector="dealCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ssf-6F-cfO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tFJ-La-92s">
+                                        <rect key="frame" x="0.0" y="44" width="208" height="36"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2Lf-cx-Siy">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="36"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-S1-W88">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="36"/>
+                                                        <color key="backgroundColor" red="0.66364383171994512" green="1" blue="0.79480179134068674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-RU-E5Z">
+                                                        <rect key="frame" x="108" y="0.0" width="100" height="36"/>
+                                                        <color key="backgroundColor" red="0.72171943470844768" green="0.72344864573652057" blue="0.73577321780160299" alpha="0.69635783450704225" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <state key="normal" title="New Game"/>
+                                                        <connections>
+                                                            <action selector="newGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eK3-Au-kdE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="2gw-tt-rtg" customClass="Board" customModule="Set" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="343" height="646"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="EAa-Ui-wG0" appends="YES" id="Gch-Mg-0KH"/>
+                                    <outletCollection property="gestureRecognizers" destination="dxK-MG-PPk" appends="YES" id="pYJ-dx-0yS"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74993366003036499" green="0.94281589984893799" blue="0.92052698135375977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2gw-tt-rtg" secondAttribute="trailing" constant="16" id="54f-rf-iqd"/>
+                            <constraint firstItem="2gw-tt-rtg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ghc-ij-Xtd"/>
+                            <constraint firstItem="7Bb-K5-gIq" firstAttribute="top" secondItem="2gw-tt-rtg" secondAttribute="bottom" constant="8" id="QX2-YF-PLc"/>
+                            <constraint firstItem="7Bb-K5-gIq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uz1-Vg-wMt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Bb-K5-gIq" secondAttribute="bottom" id="wqr-9u-BBO"/>
+                            <constraint firstItem="2gw-tt-rtg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="y0S-wZ-rXB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="board" destination="2gw-tt-rtg" id="reJ-p9-DqU"/>
+                        <outlet property="dealButton" destination="r9T-OV-h4L" id="5pI-BW-p3f"/>
+                        <outlet property="displayScore" destination="KpJ-S1-W88" id="Vg9-nt-ykc"/>
+                        <outlet property="setFoudLabel" destination="Ite-rC-eZt" id="4ux-r4-ozU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="EAa-Ui-wG0">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="fr2-U8-bhT"/>
+                        <outlet property="delegate" destination="2gw-tt-rtg" id="Ts0-Ym-hZ4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <rotationGestureRecognizer rotation="1" id="dxK-MG-PPk">
+                    <connections>
+                        <action selector="rotate:" destination="BYZ-38-t0r" id="ikh-Cp-i2T"/>
+                        <outlet property="delegate" destination="2gw-tt-rtg" id="5Bj-ky-sJB"/>
+                    </connections>
+                </rotationGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-22" y="30"/>
+        </scene>
+    </scenes>
+</document>
